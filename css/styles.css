@@ -1,0 +1,42 @@
+
+.body {
+  font-family: system-ui, sans-serif;
+} 
+
+/* title design */
+.title{
+    font-size: 1000%;
+}
+.subtitle{
+    font-size: 300%;
+}
+.bounce-text span {
+  display: inline-block;
+  animation: bounce 0.6s infinite ease-in-out;
+}
+
+/* buttons design */
+.button{
+    /* background-color:
+    border-color: brown; */
+}
+.button:hover{
+    background-color: antiquewhite;
+    transform: scale(1.1);
+}
+#btn{
+    border-color: palegreen;
+    background-color: black;
+    color: aliceblue;
+}
+
+
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+}
