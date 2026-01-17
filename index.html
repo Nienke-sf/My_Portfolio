@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,9 +16,9 @@
   <link rel="stylesheet" href="css/styles.css" />
 
   <!-- JavaScript Setup -->
-  <script src="js/main.js"></script>
-</head>
 
+</head>
+<script src="js/main.js"></script>
 <body>
   <section class="hero is-fullheight is-mobile">
     <div class="hero-body">
@@ -34,63 +34,81 @@
 
         <div class="buttons mt-6 is-flex is-flex-direction-column is-align-items-center">
           <div>
-            <button class="button my-6 is-uppercase is-large" id="btn"><a href="aboutme.html">Start --></button></a>
+            <a href="aboutme.html" class="button my-6 is-uppercase is-large" id="btn"> Start --></a>
           </div>
-          <button class="button is-uppercase is-medium" onclick="openForm()">Skills</button>
-          <button class="button is-uppercase is-medium" onclick="openForm()">Setting</button>
-          <button class="button is-uppercase is-medium">player Log</button>
+          <button class="button is-uppercase is-medium" onclick="openForm('mySkill')">Skills</button>
+          <button class="button is-uppercase is-medium" onclick="openForm('mySetting')">Setting</button>
+          <a href="res/files/PreciousNgwe.docx" download class="button is-uppercase is-medium" id="btn2"> <span>player Log </span></a>
         </div>
       </div>
     </div>
-    <div class="modal" id="mySkill"> 
-      <div class="modal-background" onclick="closeForm()"></div>
-      <div>
-        <div class="modal gradient-border is-mobile" id="mySkill">
-      <div class="card">
-        <div class="card-content">
-          <div class="content">
-           <h1 class="title is-uppercase has-text-centered is-underlined">
-              Pause
-              <button class="delete is-large" onclick="closeForm(mySkill)"></button>
-            </h1>
-            <div class="section-title">
-              <h2 class="text my-6 is-uppercase">skills & Perfered Tech </h2>            
-              <div class="skills-section is-mobile" >
-                <div class="skill"><img src="res/html.png" ><span class="tooltip">HTML</span></div>
-                <div class="skill"><img src="res/JavaScript.svg" ><span class="tooltip">JavaScript</span></div>
-                <div class="skill"> <img src="res/css.svg" ><span class="tooltip">CSS</span></div>
-                <div class="skill"><img src="res/"><span class="tooltip">Python</span></div>
-                <div class="skill"><img src="res/git.png"><span class="tooltip">Git</span></div>
-                <div class="skill"><img src="res/android-studio-icon.png"><span class="tooltip">Android Studio</span></div>
-                <div class="skill"><img src="res/git.png"> <span class="tooltip">Wordpress</span></div>
-                <div class="skill"><img src="res/git.png"><span class="tooltip">Figma</span></div>
-                <div class="skill"><img src="res/git.png"><span class="tooltip">Firebase</span></div>
-                <div class="skill"><img src="res/java.png"><span class="tooltip">Java</span></div>
-                <div class="skill"><img src="res/git.png"><span class="tooltip">MySql</span></div>
-                <div class="skill"><img src="res/git.png"><span class="tooltip">Godot</span></div>
-              </div>  
-               <h2 class="text my-6 is-uppercase">soft and hard skills </h2>  
-              <div class="columns is-mobile is-uppercase">
-                <div class="column">Communictation</div>
-                <div class="column">Teamwork</div>
-              </div>
-              <div class="columns is-mobile is-uppercase">
-                <div class="column">happy</div>
-                <div class="column">friends</div>
-              </div>         
-            </div>
-          </div>
-        </div> 
-      </div>
-    </div>
-      </div>
-    </div>
-    <footer class="hero-foot has-text-centered is-mobile">
-      <p class="py-4">
-        © Copyright – created, designed and developed by Precious Ngwe
-      </p>
-    </footer>
   </section>
-  
+  <div class="modal " id="mySkill"> 
+    <div class="modal-content is-mobile ">
+      <div class="gradient-border">
+        <div class="card">
+          <div class="card-content">
+            <div class="content">
+              <h1 class="title is-uppercase has-text-centered is-underlined">
+                  Pause
+                  <button class="delete is-large" onclick="closeForm('mySkill')"></button>
+              </h1>
+              <div class="section-title">
+                <h2 class="text my-6 is-uppercase">skills & Perfered Tech </h2>            
+                <div class="skills-section is-mobile" >
+                  <div class="skill"><img src="res/html.png" ><span class="tooltip">HTML</span></div>
+                  <div class="skill"><img src="res/JavaScript.svg" ><span class="tooltip">JavaScript</span></div>
+                  <div class="skill"> <img src="res/css.svg" ><span class="tooltip">CSS</span></div>
+                  <div class="skill"><img src="res/"><span class="tooltip">Python</span></div>
+                  <div class="skill"><img src="res/git.png"><span class="tooltip">Git</span></div>
+                  <div class="skill"><img src="res/android-studio-icon.png"><span class="tooltip">Android Studio</span></div>
+                  <div class="skill"><img src="res/git.png"> <span class="tooltip">Wordpress</span></div>
+                  <div class="skill"><img src="res/git.png"><span class="tooltip">Figma</span></div>
+                  <div class="skill"><img src="res/git.png"><span class="tooltip">Firebase</span></div>
+                  <div class="skill"><img src="res/java.png"><span class="tooltip">Java</span></div>
+                  <div class="skill"><img src="res/git.png"><span class="tooltip">MySql</span></div>
+                  <div class="skill"><img src="res/git.png"><span class="tooltip">Godot</span></div>
+                </div>  
+                <h2 class="text my-6 is-uppercase">soft and hard skills </h2>  
+                <div class="columns is-mobile is-uppercase">
+                  <div class="column">Communictation</div>
+                  <div class="column">Teamwork</div>
+                </div>
+                <div class="columns is-mobile is-uppercase">
+                  <div class="column">Problem-Solving</div>
+                  <div class="column">Organisation</div>
+                </div>         
+              </div>
+            </div>
+          </div> 
+        </div>    
+      </div>
+    </div>
+  </div>  
+  <div class="modal" id="mySetting"> 
+    <div class="modal-content is-mobile">
+      <div class="gradient-border">
+        <div class="card">
+          <div class="card-content">
+            <div class="content"> 
+              <h1 class="title is-uppercase has-text-centered is-underlined">
+                Setting
+                <button class="delete is-large" onclick="closeForm('mySetting')"></button>
+              </h1>
+              <div class="columns hero-body is-mobile is-uppercase">
+                <div class="column"><button class="button is-large " onclick="setLightMode()">Light🌞</button></div>
+                <div class="column"><button class="button is-large " onclick="setDarkMode()">Dark🌙</button></div>
+              </div> 
+            </div>
+          </div> 
+        </div>
+      </div>      
+    </div>
+  </div>
+  <footer class="hero-foot has-text-centered is-mobile">
+      <p class="py-4">
+        © Copyright – Created, Designed and Developed by Precious Ngwe
+      </p>
+  </footer>
 </body>
 </html>
