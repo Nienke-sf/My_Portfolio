@@ -31,6 +31,70 @@
 }
 
 
+/* Skill and Setting card design */
+.gradient-border {
+  background: linear-gradient(to top,
+    #0f0f0f,
+    #f58181);
+  padding: 3px;              /* border thickness */
+  border-radius: 16px;       /* rounded corners */
+}
+.gradient-border .card {
+  border-radius: 16px;       /* slightly smaller */
+}
+.delete{
+  float: right;
+}
+.text{
+    font-size: 120%;
+}
+
+.skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    /* same as your reference bg */
+    padding: 20px;
+}
+.skill {
+    position: relative;
+    display: inline-block;
+}
+.skill img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.skill img:hover {
+    transform: scale(1.1); /* zoom effect */
+}
+
+.tooltip {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: -30px;  /* appear below icon */
+    left: 50%;
+    transform: translateX(-50%);
+    background: #164147;   /* navy green */
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+    transition: opacity 0.3s;
+}
+
+.skill:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
 
 @keyframes bounce {
   0%, 100% {
