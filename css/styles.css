@@ -6,7 +6,7 @@
 /*/////// Default (light) //////// */
 body {
   font-family: system-ui, sans-serif;
-  background-color: #fdfdfd;
+  background-color: #D9D9D9;
   color: #222;
 }
 
@@ -16,7 +16,11 @@ body {
   color: #eee;
 }
 
-
+/*  colors: 
+#F57B3A
+#D9D9D9
+#000000
+# */
 
                 /*////////////////////////////////////////////////////////////*/
                                     /*  Home Page Design */
@@ -26,6 +30,7 @@ body {
 /*///////// Title design /////////*/
 .title{
     font-size: 999%;
+    color: #F57B3A;
 }
 .subtitle{
     font-size: 300%;
@@ -37,17 +42,27 @@ body {
 
 /* /////// Buttons design ///////  */
 .button{
-    border-color: brown;
+    border-color: #000000;
+    border-radius: 10px;
+    background-color: #F57B3A;
 }
 .button:hover{
-    background-color: antiquewhite;
+    background-color: rgba(248, 140, 82, 0.623);
     transform: scale(1.1);
 }
-#btn{
-    border-color: palegreen;
+.start-btn{
+    border-color: #F57B3A;
     background-color: black;
-    color: aliceblue;
+    color: #D9D9D9;
+    transition: transform 0.4s ease, opacity 0.4s ease;
 }
+.start-btn.is-leaving {
+  transform: scale(1.2);
+  opacity: 0;
+}
+
+
+
 
 /*/////// Download Button Design /////// */
 #btn2:hover span {
@@ -70,20 +85,27 @@ body {
 }
 .gradient-border .card {
   min-height: 320px; 
+  background-color: #D9D9D9;
+  border-radius: 20px; 
 }
 .gradient-border {
   background: linear-gradient(to top,
     #0f0f0f,
-    #f58181);
-  padding: 3px;             
-  border-radius: 16px;       
+    #F57B3A);
+  padding: 10px;             
+  border-radius: 20px;       
 }
 
 .delete{
   float: right;
+  background-color: black;
 }
 .text{
     font-size: 120%;
+}
+.has-orange-underline {
+  text-decoration: underline;
+  text-decoration-color: #F57B3A;
 }
 
 .skills-section {
@@ -92,7 +114,7 @@ body {
     gap: 20px;
     justify-content: center;
     padding: 20px;
-    background-color: #f58181;
+    /* background-color: #f58181; */
 }
 .skill {
     position: relative;
@@ -136,10 +158,10 @@ body {
                 /*////////////////////////////////////////////////////////////*/
 
 /* /////// Who am i - extendted /////// */
-.text{
+.text1{
   height: 50px;
 }
-.text::after{
+.text1::after{
   font-weight: bold;
   content: "front End Developer" ;
   color: aqua;
@@ -167,7 +189,6 @@ body {
 .speech-bubble {
   background-color: #ff7f2a;
   color: black;
-  padding: 1rem;
   border-radius: 10px;
   position: relative;
   flex: 1;
@@ -185,6 +206,37 @@ body {
 }
 
 
+/* /////// Picture Slideshow Container /////// */
+
+
+#section {
+  background-color: #ff7f2a;
+  width: 100%;
+  padding: 4rem 0;
+}
+
+.slideshow {
+  width: 85vmin;
+  height: 50vmin;
+  margin: auto;              /* centers it horizontally */
+  overflow: hidden;
+  border: 20px solid #ffffff;
+  border-radius: 8px;
+  box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3);
+}
+
+.wrapper {
+  display: flex;
+  width: 300%;          /* 3 slides */
+  height: 100%;
+  animation: slide 15s infinite;
+}
+
+
+.slide-img {
+  width: 100%;
+  flex-shrink: 0;
+}
 
 
 
@@ -234,5 +286,29 @@ body {
   }
   76%, 100% {
     content: "UI/UX lover";
+  }
+}
+
+
+
+/* /////// Slider animation /////// */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(0);
+  }
+  38% {
+    transform: translateX(-100%);
+  }
+  66% {
+    transform: translateX(-100%);
+  }
+  71% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(-200%);
   }
 }
