@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Precious Ngwe | Portfolio</title>
+
+  <!-- Bulma Setup -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+  />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- JavaScript Setup -->
+
+</head>
+<script src="js/main.js"></script>
+<body>
+    <div class="dropdown is-hoverable">
+        <div class="dropdown-trigger">
+            <button class="button mx-3 mt-4" id="menu-btn" aria-haspopup="true" aria-controls="dropdown-menu4">
+            <span>Menu ⬇️</span>
+            </button>
+        </div>
+        <div class="dropdown-menu mx-3" id="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+                <a href="#" class="dropdown-item"> Home </a>
+                <a class="dropdown-item is-active"> About Me </a>
+                <a href="#" class="dropdown-item"> Projects </a>
+                <hr class="dropdown-divider" />
+                <a href="#" class="dropdown-item"> Contact </a>
+            </div>
+        </div>
+    </div>
+    <section class="hero is-fullheight is-mobile">   
+        <div class="mt-6">
+            <div class="container has-text-centered">
+                <h1 class="title is-uppercase is-mobile">
+                    <span>Who i am </span>
+                </h1>
+            </div>
+            <div class="text mt-6 is-uppercase is-flex is-justify-content-center is-align-items-center">
+                <span class="is-size-4 pr-2">I am a</span>
+            </div>
+        </div>
+        <div class="speech-container hero-body ">
+            <img src="res/gif/Art Girl Sticker.gif" alt="Character" class="character">
+            <div class="speech-bubble is-flex is-flex-direction-column is-justify-content-flex-start is-align-items-center" id="speech">
+                <p class=" is-size-4 has-text-centered is-uppercase">
+                    Hello welcome to my world
+                </p>
+                <div class="is-flex is-size-6">
+                    <span id="info"></span><span class="cursor">|</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="hero-foot has-text-centered is-mobile">
+      <p class="py-4">
+        © Copyright – Created, Designed and Developed by Precious Ngwe
+      </p>
+    </footer>
+</body>
+</html>

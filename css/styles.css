@@ -25,7 +25,7 @@ body {
 
 /*///////// Title design /////////*/
 .title{
-    font-size: 1000%;
+    font-size: 999%;
 }
 .subtitle{
     font-size: 300%;
@@ -54,7 +54,7 @@ body {
   display:none
 }
 #btn2:hover:before {
-  content:"Download Resume 📥";
+  content:"Resume 📥";
 }
 
 
@@ -92,6 +92,7 @@ body {
     gap: 20px;
     justify-content: center;
     padding: 20px;
+    background-color: #f58181;
 }
 .skill {
     position: relative;
@@ -130,18 +131,108 @@ body {
 }
 
 
+                /*////////////////////////////////////////////////////////////*/
+                             /*  ABOUT ME PAGE DESIGN  */
+                /*////////////////////////////////////////////////////////////*/
+
+/* /////// Who am i - extendted /////// */
+.text{
+  height: 50px;
+}
+.text::after{
+  font-weight: bold;
+  content: "front End Developer" ;
+  color: aqua;
+  font-size: 28px;
+  animation: text 10s infinite;
+}
+
+/* /////// Nav Dropdown Menu /////// */
+#menu-btn{
+  background-color: #f1ebeb;
+  border: none;
+  /* border-radius: 30px; */
+}
+
+.dropdown-content{
+  background-color: #f1ebeb;
+}
+
+
+/* /////// Speech Bubble Container /////// */
+.speech-container {
+  gap: 1rem;
+}
+
+.speech-bubble {
+  background-color: #ff7f2a;
+  color: black;
+  padding: 1rem;
+  border-radius: 10px;
+  position: relative;
+  flex: 1;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.speech-bubble::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 20px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #ff7f2a transparent transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                 /*////////////////////////////////////////////////////////////*/
                              /* ANIMATION & MOVEMENT */
                 /*////////////////////////////////////////////////////////////*/
 
-/* /////// Title BoUnce Animation /////// */
+/* /////// Title Bounce Animation /////// */
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0);
   }
   50% {
     transform: translateX(-5px);
+  }
+}
+
+/* /////// Span About me Animation /////// */
+@keyframes text {
+  0%, 25% {
+    content: "Front End developer";
+  }
+ 26%, 50% {
+    content: "Gamer";
+  }
+  51%, 75% {
+    content: "Web Designer";
+  }
+  76%, 100% {
+    content: "UI/UX lover";
   }
 }

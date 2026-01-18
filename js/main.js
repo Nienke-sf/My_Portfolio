@@ -32,3 +32,24 @@ document.addEventListener('DOMContentLoaded', () => {
     document.documentElement.setAttribute('data-theme', savedTheme);
   }
 });
+
+
+
+// Text typewrite animation 
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('main.js loaded');
+
+  const message = "THIS SECTION WILL FOCUS ON WHO I AM, MY NAME WHAT I LIKE AND WHAT I DO IN MY SPARE TIME. MY GOALS, AND PASSIONS, MY AIMS.";
+  const textElement = document.getElementById("info");
+  let index = 0;
+
+  function typeWriter() {
+    if (index < message.length) {
+      textElement.innerHTML += message.charAt(index);
+      index++;
+      setTimeout(typeWriter, 30);
+    }
+  }
+
+  typeWriter();
+});
