@@ -241,16 +241,24 @@ body {
 
 
                 /*////////////////////////////////////////////////////////////*/
-                             /*  ABOUT ME PAGE DESIGN  */
+                             /*  PROJECT PAGE DESIGN  */
                 /*////////////////////////////////////////////////////////////*/ 
 
 
-.h-100 {
+.card-ui {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #F57B3A;
+  /* background: linear-gradient(to top,
+    #0f0f0f,
+    #F57B3A); */
 }
 
+.card-ui:hover {
+  transform: scale(1.0);
 
-
+}
 
 
 

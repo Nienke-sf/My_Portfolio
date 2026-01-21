@@ -80,3 +80,19 @@ console.log('main.js loaded');
       type();
     }
   });
+
+  document.querySelectorAll('.card-link').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+
+      const card = link.querySelector('.card');
+      card.classList.add(
+        'animate__animated',
+        'animate__fadeOutRightBig'
+      );
+
+      setTimeout(() => {
+        window.location.href = link.href;
+      }, 600);
+    });
+  });
