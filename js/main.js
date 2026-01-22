@@ -11,6 +11,17 @@ console.log('main.js loaded');
     document.getElementById(modalId).classList.remove('is-active');
   }
 
+  function openForm(modalId) {
+    const mySkill = document.getElementById('mySkill');
+    const mySetting = document.getElementById('mySetting');
+
+    if (mySkill) mySkill.classList.remove('is-active');
+    if (mySetting) mySetting.classList.remove('is-active');
+
+    const modal = document.getElementById(modalId);
+    if (modal) modal.classList.add('is-active');
+  }
+
 
   function setLightMode() {
     document.documentElement.setAttribute('data-theme', 'light');
@@ -24,6 +35,10 @@ console.log('main.js loaded');
     closeForm('mySetting');
   }
 
+
+
+  
+
   // Apply saved theme on load
   document.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('theme');
@@ -32,20 +47,31 @@ console.log('main.js loaded');
     }
   });
 
+
+  // Apply Animation to start button 
   document.addEventListener('DOMContentLoaded', () => {
     const startBtn = document.querySelector('.start-btn');
 
     if (!startBtn) return;
+
     startBtn.addEventListener('click', (e) => {
-    e.preventDefault(); // stop instant navigation
+      e.preventDefault();
 
-    startBtn.classList.add('is-leaving');
+      const duration = 900;
 
-    setTimeout(() => {
-      window.location.href = startBtn.href;
-    }, 400); // MUST match CSS duration
+      startBtn.style.setProperty('--animate-duration', `${duration}ms`);
+      startBtn.classList.add(
+        'animate__animated',
+        'animate__bounceOutRight'
+      );
+
+      setTimeout(() => {
+        window.location.href = startBtn.href;
+      }, duration - 400); // navigate just before end
+    });
   });
-  });
+
+
 
 
 
@@ -81,18 +107,22 @@ console.log('main.js loaded');
     }
   });
 
-  document.querySelectorAll('.card-link').forEach(link => {
-    link.addEventListener('click', e => {
-      e.preventDefault();
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.card-link').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
 
-      const card = link.querySelector('.card');
-      card.classList.add(
-        'animate__animated',
-        'animate__fadeOutRightBig'
-      );
+        const card = link.querySelector('.card-ui');
 
-      setTimeout(() => {
-        window.location.href = link.href;
-      }, 600);
+        card.style.setProperty('--animate-duration', '2s');
+        card.classList.add(
+          'animate__animated',
+          'animate__flipInY'
+        );
+
+        card.addEventListener('animationend', () => {
+          window.location.href = link.href;
+        }, { once: true });
+      });
     });
   });
