@@ -138,8 +138,8 @@ body {
     bottom: -30px;  /* appear below icon */
     left: 50%;
     transform: translateX(-50%);
-    background: #164147; 
-    color: white;
+    background: #ff7f2a; 
+    color: #D9D9D9;
     font-size: 14px;
     padding: 5px 10px;
     border-radius: 6px;
@@ -211,36 +211,33 @@ body {
 
 #section {
   background-color: #ff7f2a;
-  width: 100%;
-  padding: 4rem 0;
 }
 
-.slideshow {
-  width: 85vmin;
-  height: 50vmin;
-  margin: auto;              /* centers it horizontally */
+.img-slide {
+  width: 100%;
+  height: 500px;
   overflow: hidden;
-  border: 20px solid #ffffff;
-  border-radius: 8px;
-  box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3);
 }
 
-.wrapper {
-  display: flex;
-  width: 300%;          /* 3 slides */
-  height: 100%;
-  animation: slide 15s infinite;
+.img-slide figure {
+  position: relative;
+  left: 0;
+  margin: 0;
+  width: 300%;             /* 100% × number of slides */
+  animation: my-slide 10s infinite;
 }
 
+.my-slide {  
+  width: 33.3333%;
+  position: relative;
+  float: left;
+}
 
-.slide-img {
+.my-slide img {
   width: 100%;
-  flex-shrink: 0;
-}
-
-
-.continue-btn{
-  
+  height: 500px;
+  max-height: 420px;    
+  object-fit: contain;  
 }
 
 
@@ -248,7 +245,7 @@ body {
 /* /////// Footer Design /////// */
 
 .banner-foot{
-  background-color: #0f0f0f;
+  background-color: #aaaaaa;
   color: #D9D9D9;
 
 }
@@ -349,23 +346,13 @@ body {
 
 
 /* /////// Slider animation /////// */
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  33% {
-    transform: translateX(0);
-  }
-  38% {
-    transform: translateX(-100%);
-  }
-  66% {
-    transform: translateX(-100%);
-  }
-  71% {
-    transform: translateX(-200%);
-  }
-  100% {
-    transform: translateX(-200%);
-  }
+@keyframes my-slide {
+  0%, 9%   { left:   0%; }
+  18%, 27%  { left: -100%; }
+  36%, 45%  { left: -200%; }
+  54%, 63% { left: -300%; }
+  /* making the slide go backwards */
+  72%, 81%{ left: -200%; }
+  90%, 99% { left: -100%; }
+  100% { left:   0%; }
 }

@@ -106,7 +106,7 @@ console.log('main.js loaded');
       type();
     }
   });
-
+  // card animation
   document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.card-link').forEach(link => {
       link.addEventListener('click', e => {
