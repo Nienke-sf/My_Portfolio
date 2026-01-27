@@ -65,7 +65,6 @@ body {
 }
 
 
-
                 /*////////////////////////////////////////////////////////////*/
                              /*  Skills and Setting card design */
                 /*////////////////////////////////////////////////////////////*/
@@ -74,7 +73,12 @@ body {
 .modal-content {
   max-width: 500px;  
   margin: 0 auto;
+  
 }
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 .gradient-border .card {
   min-height: 320px; 
   background-color: #D9D9D9;
@@ -144,6 +148,19 @@ body {
 .skill:hover .tooltip {
     visibility: visible;
     opacity: 1;
+}
+
+
+/*/////// SKills Table Design /////// */
+
+.skill-table td {
+  color: #000; 
+  border: 1px solid; 
+  background-color: #D9D9D9;
+}
+.skill-table.table.is-bordered td,
+.skill-table.table.is-bordered th {
+  border-color: #adacac;
 }
 
 
