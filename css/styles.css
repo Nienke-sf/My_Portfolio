@@ -216,6 +216,11 @@ body {
   border-color: transparent #ff7f2a transparent transparent;
 }
 
+.typewriter {
+  white-space: pre-line;
+
+}
+
 
 /* /////// Picture Slideshow Container /////// */
 #section {

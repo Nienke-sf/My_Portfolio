@@ -99,7 +99,7 @@ console.log('main.js loaded');
         if (index < text.length) {
           element.textContent += text.charAt(index);
           index++;
-          setTimeout(type, 20);
+          setTimeout(type, 10);
         }
       }
 
