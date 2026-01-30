@@ -317,6 +317,16 @@ body {
 }
 
 
+/* /////// Skill icon smaller design  /////// */
+.skill-icon {
+  width: 32px;      /* or 24px / 40px, whatever you like */
+  height: 32px;
+  object-fit: contain;
+  display: block;
+}
+
+
+
 
                 /*////////////////////////////////////////////////////////////*/
                              /* ANIMATIONS & MOVEMENTS */
