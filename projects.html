@@ -3,8 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff"> <!-- Stops file guessing -->
+  <meta http-equiv="Content-Security-Policy" 
+  content="default-src 'self';
+           style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://fonts.googleapis.com;
+           font-src 'self' https://fonts.gstatic.com;
+           script-src 'self' 'unsafe-inline';
+           img-src 'self' data: https:;"> <!-- Loading external resources -->
 
-  <title>Precious Ngwe | Portfolio</title>
+  <title>Precious Ngwe | Project List</title>
 
   <!-- Bulma Setup -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
@@ -223,23 +230,23 @@
                         <section class="modal-card-body">
                             <p><strong>Icons</strong></p>
                             <div class="is-flex is-flex-direction-column">
-                                <a href="https://simpleicons.org/" target="_blank">Simpleicons</a>
-                                <a href="https://www.flaticon.com/search?word=%20tourist%20app" target="_blank">Flaticon</a>
+                                <a href="https://simpleicons.org/" target="_blank" rel="noopener noreferrer">Simpleicons</a>
+                                <a href="https://www.flaticon.com/search?word=%20tourist%20app" target="_blank" rel="noopener noreferrer">Flaticon</a>
                             </div>
 
                             <p class="mt-3"><strong>Images & Gifs & Animations</strong></p>
                             <p style="color: black;">Found through Google then refined on Figma</p>
                             <div class="is-flex is-flex-direction-column">
-                                <a href="https://giphy.com/" target="_blank">Giphy</a>
-                                <a href="https://www.vexels.com/merch/png/" target="_blank">Vexels</a>
-                                <a href="https://animate.style/" target="_blank">Animate</a>
+                                <a href="https://giphy.com/" target="_blank" rel="noopener noreferrer">Giphy</a>
+                                <a href="https://www.vexels.com/merch/png/" target="_blank" rel="noopener noreferrer">Vexels</a>
+                                <a href="https://animate.style/" target="_blank" rel="noopener noreferrer">Animate</a>
                             </div>
 
                             <p class="mt-3"><strong>Inspiration</strong></p>
                             <p style="color: black;">Previewed other Portfolios on Github</p>
                             <div class="is-flex is-flex-direction-column">
-                                <a href="https://dribbble.com" target="_blank">Dribbble</a>
-                                <a href="https://webofdevs.com/" target="_blank">Webofdevs</a>
+                                <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer">Dribbble</a>
+                                <a href="https://webofdevs.com/" target="_blank" rel="noopener noreferrer">Webofdevs</a>
                             </div>
                         </section>
                     </div>
