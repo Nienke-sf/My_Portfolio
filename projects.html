@@ -200,17 +200,49 @@
         </div>
     </section>
     <footer class="banner-foot hero-foot has-text-centered is-mobile mt-4">
-        <div class="item social">
-            <a href="#"><img src="res/images/github (1).svg" class="icon ion-social-github mt-5"></a>
-            <a href="#"><img src="res/images/icons8-linkedin.svg" class="icon ion-social-linkedin"></a>
-            <a href="#"><img src="res/images/replit.svg" class="icon ion-social-github"></a>
+       <div class="item social">
+            <a href="https://github.com/Nienke-sf"><img src="res/images/github (1).svg" class="icon ion-social-github mt-5"></a>
+            <a href="https://www.linkedin.com/in/precious-ngwe-643467263"><img src="res/images/icons8-linkedin.svg" class="icon ion-social-linkedin"></a>
+            <a href="https://dev.to/nienke"><img src="res/images/dev.svg" class="icon ion-social-github"></a>
         </div>
         <div class="is-uppercase mt-4">
-            <a href="#" class="pr-4" > Credit</a>
-            <a href="#" class=""> Contact Me</a>
+            <a href="#" class="pr-4" onclick="document.getElementById('credit-modal').classList.add('is-active'); return false;">Credit</a>
+            <!-- Modal -->
+            <div class="modal" id="credit-modal">
+                <div class="modal-background" onclick="document.getElementById('credit-modal').classList.remove('is-active')"></div>
+                    <div class="modal-card">
+                        <header class="modal-card-head">
+                            <p class="modal-card-title">Credits</p>
+                            <button class="delete" onclick="document.getElementById('credit-modal').classList.remove('is-active')"></button>
+                        </header>
+                        <section class="modal-card-body">
+                            <p><strong>Icons</strong></p>
+                            <div class="is-flex is-flex-direction-column">
+                                <a href="https://simpleicons.org/" target="_blank">Simpleicons</a>
+                                <a href="https://www.flaticon.com/search?word=%20tourist%20app" target="_blank">Flaticon</a>
+                            </div>
+
+                            <p class="mt-3"><strong>Images & Gifs</strong></p>
+                            <p style="color: black;">Found through Google then refined on Figma</p>
+                            <div class="is-flex is-flex-direction-column">
+                                <a href="https://giphy.com/" target="_blank">Giphy</a>
+                                <a href="https://www.vexels.com/merch/png/" target="_blank">Vexels</a>
+                            </div>
+
+                            <p class="mt-3"><strong>Inspiration</strong></p>
+                            <p style="color: black;">Previewed other Portfolios on Github</p>
+                            <div class="is-flex is-flex-direction-column">
+                                <a href="https://dribbble.com" target="_blank">Dribbble</a>
+                                <a href="https://webofdevs.com/" target="_blank">Webofdevs</a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <a href="mailto:preciousngwe@outlook.com" class="is-uppercase"> Contact Me</a>
         </div>
-        <p class="py-4">
-        © Copyright – Created, Designed and Developed by Precious Ngwe
+        <p class="py-4 is-uppercase">
+            © Copyright – Created, Designed and Developed by Precious Ngwe
         </p>
     </footer>
 <script src="js/main.js"></script>
