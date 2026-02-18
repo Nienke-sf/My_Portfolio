@@ -186,6 +186,9 @@ body {
   border: none;
   /* border-radius: 30px; */
 }
+#dropdown-hover:hover{
+  background-color:#D9D9D9;
+}
 
 .dropdown-content{
   background-color: #F57B3A;
@@ -227,18 +230,24 @@ body {
   background-color: #ff7f2a;
 }
 
-.img-slide {
+.img-slide, .img-slide2 {
   width: 100%;
   height: 500px;
   overflow: hidden;
 }
-
 .img-slide figure {
   position: relative;
   left: 0;
   margin: 0;
   width: 300%;             /* 100% × number of slides */
   animation: my-slide 10s infinite;
+}
+.img-slide2 figure {
+  position: relative;
+  left: 0;
+  margin: 0;
+  width: 300%;             /* 100% × number of slides */
+  animation: my-slide2 10s infinite;
 }
 
 .my-slide {  
@@ -248,6 +257,18 @@ body {
 }
 
 .my-slide img {
+  width: 100%;
+  height: 500px;
+  max-height: 420px;    
+  object-fit: contain;  
+}
+.my-slide2 {  
+  width: 33.3333%;
+  position: relative;
+  float: left;
+}
+
+.my-slide2 img {
   width: 100%;
   height: 500px;
   max-height: 420px;    
@@ -388,6 +409,16 @@ body {
 
 /* /////// Automated slideshow animation /////// */
 @keyframes my-slide {
+  0%, 9%   { left:   0%; }
+  18%, 27%  { left: -100%; }
+  36%, 45%  { left: -200%; }
+  54%, 63% { left: -300%; }
+  /* making the slide go backwards */
+  72%, 81%{ left: -200%; }
+  90%, 99% { left: -100%; }
+  100% { left:   0%; }
+}
+@keyframes my-slide2 {
   0%, 9%   { left:   0%; }
   18%, 27%  { left: -100%; }
   36%, 45%  { left: -200%; }

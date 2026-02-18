@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Precious Ngwe | Portfolio</title>
+  <title>Precious Ngwe | About Me</title>
 
   <!-- Bulma Setup -->
   <link
@@ -20,19 +20,17 @@
 </head>
 <body>
     <div class="dropdown is-hoverable">
-        <div class="dropdown-trigger">
+        <div class="dropdown-trigger px-5">
             <button class="button mx-3 mt-4" id="menu-btn" aria-haspopup="true" aria-controls="dropdown-menu4">
             <span>Menu</span>
             </button>
         </div>
-        <div class="dropdown-menu mx-3" id="dropdown-menu" role="menu">
+        <div class="dropdown-menu px-5" id="dropdown-menu" role="menu">
             <div class="dropdown-content">
-                <a href="index.html" class="dropdown-item"> Home </a>
-                <a href="aboutme.html" class="dropdown-item"> About Me </a>
-                <a href="projects.html" class="dropdown-item"> Projects </a>
-                <a class="dropdown-item" onclick="openForm('mySetting')">Setting</a>
-                <hr class="dropdown-divider" />
-                <a href="#" class="dropdown-item"> Contact </a>
+                <a href="index.html" class="dropdown-item" id="dropdown-hover"> Home </a>
+                <a href="aboutme.html" class="dropdown-item" id="dropdown-hover"> About Me </a>
+                <a href="projects.html" class="dropdown-item" id="dropdown-hover"> Projects </a>
+                <a class="dropdown-item" id="dropdown-hover" onclick="openForm('mySetting')">Setting</a>
             </div>
         </div>
     </div>
@@ -71,16 +69,16 @@
             <img src="res/gif/Art Girl Sticker.gif" alt="Character" class="character">
             <div class="speech-bubble py-4 px-4 is-flex is-flex-direction-column is-justify-content-flex-start is-align-items-center">
                 <p class=" is-size-4 has-text-centered is-uppercase">
-                    Hello welcome to my world
+                    aBOUT ME
                 </p>
                 <div class="is-flex is-size-5 mt-1 py-3">
                     <span class="typewriter cursor" 
-                        data-text="I am someone who enjoys refining side passion projects, learning ideas and different points of view from other developers, and topics in subjects I'm currently obsessed with. 
-                        When I'm not doing that, I'm mostly going to be playing video games, completing a sudoku or jigsaw puzzle and being with my friends and family. 
+                        data-text="I am someone who enjoys refining side passion projects, learning ideas and different points of view from other developers, and topics in subjects I'm currently obsessed with. When I'm not doing that, 
+                        I'm mostly going to be playing video games, completing a sudoku or jigsaw puzzle and being with my friends and family. 
                         I love spontaneous outings, like exploring London’s museums, trying cool food and activity spots. 
                         I also like to stay active by going out for runs and walks every other day (usually balanced out with snacks later!).
-                        I love the indoors and a relaxing moment whilst indulging in movies and books on mystery, thriller, action and suspense,
-                        im kind of someone who is a mix of calm and chaos, creative work, quiet moments and a little fun in between 🙂
+                        I love the indoors and a relaxing moment whilst indulging in movies and books on mystery, thriller, action and suspense.
+                        I'm kind of someone who is a mix of calm and chaos, creative work, quiet moments and a little fun.🙂
 
 
                         During my degree in computing, I discovered a deep interest in websites and applications, linked to my love for art and creativity, with the entire process of art and logic coming together being so fulfilling.
@@ -111,6 +109,15 @@
                     <div class="my-slide">
                         <img src="res/images/image 25.png">
                     </div>
+                    <!-- <div class="my-slide">
+                        <img src="res/images/books.png">
+                    </div>
+                    <div class="my-slide">
+                        <img src="res/images/art.png">
+                    </div>
+                    <div class="my-slide">
+                        <img src="res/images/gaming.png">
+                    </div> -->
                 </figure>
             </div>
         </div>
@@ -121,7 +128,7 @@
                     MY EXPERIENCE & CERTIFICATES
                 </p>
                 <div class="is-flex is-size-5">
-                    <span class="typewriter" data-text="UX Design Introduction Job Simulation — Lloyds Banking Group (Forage), October 2025
+                    <span class="typewriter" data-text= "UX Design Introduction Job Simulation — Lloyds Banking Group (Forage), October 2025
 
                         Software Engineering Job Simulation — Electronic Arts (Forage), February 2024
 
@@ -131,16 +138,13 @@
             </div>
         </div>
        <div class="section container" id="section">
-            <div class="img-slide">
+            <div class="img-slide2">
                 <figure>
-                    <div class="my-slide">
-                        <img src="res/images/image 22.png">
+                    <div class="my-slide2">
+                        <img src="res/images/certi-1.png">
                     </div>
-                    <div class="my-slide">
-                        <img src="res/images/image 26.png">
-                    </div>
-                    <div class="my-slide">
-                        <img src="res/images/image 25.png">
+                    <div class="my-slide2">
+                        <img src="res/images/certi-2.png">
                     </div>
                 </figure>
             </div>
