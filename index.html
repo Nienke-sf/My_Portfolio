@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,9 +11,12 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
   />
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
 
  <!-- Animation Setup -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -118,8 +121,8 @@
                 <button class="delete is-large" onclick="closeForm('mySetting')"></button>
               </h1>
               <div class="columns hero-body is-mobile is-uppercase">
-                <div class="column"><button class="button is-large " onclick="setLightMode()">Light🌞</button></div>
-                <div class="column"><button class="button is-large " onclick="setDarkMode()">Dark🌙</button></div>
+                <div class="column"><button class="button is-large " id="theme-colour1" onclick="setLightMode()">Light🌞</button></div>
+                <div class="column"><button class="button is-large " id="theme-colour2" onclick="setDarkMode()">Dark🌙</button></div>
               </div> 
             </div>
           </div> 
@@ -132,6 +135,5 @@
         © Copyright – Created, Designed and Developed by Precious Ngwe
       </p>
   </footer>
-<script src="js/main.js"></script>
 </body>
 </html>

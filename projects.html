@@ -14,7 +14,12 @@
   
    <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
 
+  
+  <!-- JavaScript Setup -->
+   <script src="js/main.js"></script>
+  
 </head>
 <body>
     <div class="dropdown is-hoverable">
@@ -44,8 +49,8 @@
                                 <button class="delete is-large" onclick="closeForm('mySetting')"></button>
                             </h1>
                             <div class="columns hero-body is-mobile is-uppercase">
-                                <div class="column"><button class="button is-large " onclick="setLightMode()">Light🌞</button></div>
-                                <div class="column"><button class="button is-large " onclick="setDarkMode()">Dark🌙</button></div>
+                                <div class="column"><button class="button is-large " id="theme-colour1" onclick="setLightMode()">Light🌞</button></div>
+                                <div class="column"><button class="button is-large " id="theme-colour2" onclick="setDarkMode()">Dark🌙</button></div>
                             </div> 
                         </div>
                     </div> 
@@ -222,11 +227,12 @@
                                 <a href="https://www.flaticon.com/search?word=%20tourist%20app" target="_blank">Flaticon</a>
                             </div>
 
-                            <p class="mt-3"><strong>Images & Gifs</strong></p>
+                            <p class="mt-3"><strong>Images & Gifs & Animations</strong></p>
                             <p style="color: black;">Found through Google then refined on Figma</p>
                             <div class="is-flex is-flex-direction-column">
                                 <a href="https://giphy.com/" target="_blank">Giphy</a>
                                 <a href="https://www.vexels.com/merch/png/" target="_blank">Vexels</a>
+                                <a href="https://animate.style/" target="_blank">Animate</a>
                             </div>
 
                             <p class="mt-3"><strong>Inspiration</strong></p>
@@ -245,6 +251,5 @@
             © Copyright – Created, Designed and Developed by Precious Ngwe
         </p>
     </footer>
-<script src="js/main.js"></script>
 </body>
 </html>

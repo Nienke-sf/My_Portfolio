@@ -3,9 +3,9 @@
                                     /*  Theme set up  */
                 /*////////////////////////////////////////////////////////////*/
 
-/*/////// Default (light) //////// */
+/*/////// Default (light) ////////  system-ui */
 body {
-  font-family: system-ui, sans-serif;
+  font-family:"Audiowide", sans-serif;
   background-color: #D9D9D9;
   color: #222;
 }
@@ -15,6 +15,25 @@ body {
   background-color: #121212;
   color: #eee;
 }
+
+/* Dark mode modal fixes */
+[data-theme="dark"] .modal-card-body {
+  background-color: #1e1e1e;
+  color: #D9D9D9;
+}
+[data-theme="dark"] .modal-card-body p {
+  color: #D9D9D9 !important;
+}
+[data-theme="dark"] .modal-card-head {
+  background-color: #2a2a2a;
+  border-color: #444;
+}
+[data-theme="dark"] .modal-card-title {
+  color: #D9D9D9;
+}
+
+
+
 
                 /*////////////////////////////////////////////////////////////*/
                                     /*  Home Page Design */
@@ -29,6 +48,7 @@ body {
 .subtitle{
     font-size: 300%;
 }
+
 .bounce-text span {
   display: inline-block;
   animation: bounce 0.6s infinite ease-in-out;
@@ -39,11 +59,21 @@ body {
     border-color: #000000;
     border-radius: 10px;
     background-color: #F57B3A;
+    font-family:"Audiowide", sans-serif;
+    
 }
 .button:hover{
     background-color: rgba(248, 140, 82, 0.623);
     transform: scale(1.1);
 }
+#theme-colour2:hover{
+  background-color: #993803;;
+
+}
+#theme-colour1:hover{
+  background-color: #f5c3a8;;
+}
+
 .start-btn{
     border-color: #F57B3A;
     background-color: black;
@@ -54,8 +84,6 @@ body {
   transform: scale(1.2);
   opacity: 0;
 }
-
-
 /*/////// Download Button Design /////// */
 #btn2:hover span {
   display:none
@@ -73,11 +101,10 @@ body {
 .modal-content {
   max-width: 500px;  
   margin: 0 auto;
+  font-family: "Oxanium", sans-serif;
   
 }
-.scrollbar::-webkit-scrollbar {
-  display: none;
-}
+.scrollbar::-webkit-scrollbar { display: none; }
 
 .gradient-border .card {
   min-height: 320px; 
@@ -93,20 +120,18 @@ body {
   border-radius: 20px;       
 }
 
-
 .delete{
   float: right;
   background-color: black;
 }
-.text{
-    font-size: 120%;
-}
+.text{  font-size: 120%; }
+
 .has-orange-underline {
   text-decoration: underline;
   text-decoration-color: #F57B3A;
 }
 
- /*////////// Icons ////////// */
+ /*////////// Skill Icons ////////// */
 .skills-section {
     display: flex;
     flex-wrap: wrap;
@@ -125,9 +150,7 @@ body {
     transition: transform 0.2s ease;
 }
 
-.skill img:hover {
-    transform: scale(1.1); /* zoom effect */
-}
+.skill img:hover {transform: scale(1.1); }
 
 .tooltip {
     visibility: hidden;
@@ -145,10 +168,7 @@ body {
     transition: opacity 0.3s;
 }
 
-.skill:hover .tooltip {
-    visibility: visible;
-    opacity: 1;
-}
+.skill:hover .tooltip {visibility: visible; opacity: 1;}
 
 
 /*/////// SKills Table Design /////// */
@@ -169,9 +189,7 @@ body {
                 /*////////////////////////////////////////////////////////////*/
 
 /* /////// Subtitle extended infomation /////// */
-.text1{
-  height: 50px;
-}
+.text1{height: 50px;}
 .text1::after{
   font-weight: bold;
   content: "front End Developer" ;
@@ -186,12 +204,14 @@ body {
   border: none;
   color: #000000;
   transform: none;
+  font-family: "Audiowide", sans-serif;
   
 }
 .dropdown-content .dropdown-item {
   color: #000000;
   font-size: 1.1rem; /* bigger text to match larger button */
   padding: 0.6rem 1.2rem;
+  font-family:"Oxanium", sans-serif
 }
 .dropdown-content{
   background-color: #F57B3A;
@@ -201,14 +221,13 @@ body {
   background-color: #D9D9D9 !important;  /* overdrides bulmas defaults hover colour  */
 }
 
-
-
+.aboutme-subtitles{
+  font-family:"Audiowide", sans-serif;
+}
 
 
 /* /////// Speech Bubble Container /////// */
-.speech-container {
-  gap: 1rem;
-}
+.speech-container { gap: 1rem;}
 
 .speech-bubble {
   background-color: #ff7f2a;
@@ -218,6 +237,7 @@ body {
   flex: 1;
   font-size: 0.9rem;
   line-height: 1.4;
+  font-family: "Oxanium", sans-serif;
 }
 .speech-bubble::before {
   content: '';
@@ -229,16 +249,11 @@ body {
   border-color: transparent #ff7f2a transparent transparent;
 }
 
-.typewriter {
-  white-space: pre-line;
-
-}
+.typewriter { white-space: pre-line;}
 
 
 /* /////// Picture Slideshow Container /////// */
-#section {
-  background-color: #ff7f2a;
-}
+#section {background-color: #ff7f2a;}
 
 .img-slide {
   width: 100%;
@@ -311,9 +326,7 @@ body {
     color:inherit;
 
 }
-.item.social :hover{
-  transform: scale(1.1);
-}
+.item.social :hover{transform: scale(1.1);}
 .icon{
     width: 40px; /* Resize the rendered image */
     height: 40px; /* Resize the rendered image */
@@ -336,10 +349,7 @@ body {
     #0f0f0f,
     #F57B3A); */
 }
-.card-ui:hover {
-  background-color: #f89159;
-
-}
+.card-ui:hover { background-color: #f89159;}
 
 .card-link{
   display: block;
@@ -353,6 +363,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family:"Oxanium", sans-serif
 }
 
 .card-image img {
@@ -366,19 +377,13 @@ body {
   object-fit: contain;
 }
 
-.columns.is-multiline .column {
-  display: flex;
-}
-.columns.is-multiline .column .card-link {
-  flex: 1;
-}
+.columns.is-multiline .column { display: flex;}
+.columns.is-multiline .column .card-link { flex: 1;}
 
 
 
-/*///////// image improvement/////// */
-#medicine{
-  background-color: #D9D9D9;
-}
+/*///////// Image improvement/////// */
+#medicine{background-color: #D9D9D9;}
 
 
 /* /////// Skill icon smaller design  /////// */
@@ -390,6 +395,13 @@ body {
 }
 
 
+                /*////////////////////////////////////////////////////////////*/
+                             /*  PROJECT CONTENT PAGE DESIGN  */
+                /*////////////////////////////////////////////////////////////*/ 
+
+
+.info-font{ font-family:"Oxanium", sans-serif;}
+
 
 
                 /*////////////////////////////////////////////////////////////*/
@@ -398,28 +410,16 @@ body {
 
 /* /////// Title - Bounce Animation /////// */
 @keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateX(-5px);
-  }
+  0%, 100% {transform: translateY(0);}
+  50% {transform: translateX(-5px);}
 }
 
 /* /////// About me - Span Animation /////// */
 @keyframes text {
-  0%, 25% {
-    content: "Front End developer";
-  }
- 26%, 50% {
-    content: "Gamer";
-  }
-  51%, 75% {
-    content: "Web Designer";
-  }
-  76%, 100% {
-    content: "UI/UX lover";
-  }
+  0%, 25% {content: "Front End developer"; }
+  26%, 50% {content: "Gamer";  }
+  51%, 75% {content: "Web Designer";  }
+  76%, 100% {content: "UI/UX lover";  }
 }
 
 
@@ -444,4 +444,45 @@ body {
   0%, 40%  { left: 0%; }
   50%, 90% { left: -100%; }
   100%     { left: 0%; }
+}
+
+
+                /*////////////////////////////////////////////////////////////*/
+                             /* RESPONSIVE DESIGN */
+                /*////////////////////////////////////////////////////////////*/
+
+/* Responsive title sizes */
+@media (max-width: 768px) {
+  .title { font-size: 18vw; }
+  .subtitle { font-size: 6vw; }
+}
+@media (max-width: 480px) {
+  .title { font-size: 14vw; }
+  .subtitle { font-size: 5vw; }
+}
+
+/* Responsive speech bubble  */
+@media (max-width: 768px) {
+  .speech-container {
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .character { width: 80px; height: auto; }
+  .speech-bubble::before { display: none; }
+  .speech-bubble { font-size: 0.85rem; width: 100%; }
+  .is-size-5 { font-size: 0.95rem !important; }
+  .text1::after { font-size: 20px; }
+}
+
+/* Responsive Picture slideshow */
+@media (max-width: 768px) {
+  .img-slide, .img-slide2 { height: 220px; }
+  .my-slide img, .my-slide2 img { height: 220px; }
+}
+
+/* Responsive cards Stack */
+@media (max-width: 768px) {
+  .columns.is-multiline .column.is-6 {
+    width: 100%;
+  }
 }

@@ -22,7 +22,7 @@ console.log('main.js loaded');
     if (modal) modal.classList.add('is-active');
   }
 
-
+  // Settings - light and dark mode
   function setLightMode() {
     document.documentElement.setAttribute('data-theme', 'light');
     localStorage.setItem('theme', 'light');
@@ -67,7 +67,7 @@ console.log('main.js loaded');
 
       setTimeout(() => {
         window.location.href = startBtn.href;
-      }, duration - 400); // navigate just before end
+      }, duration - 400);
     });
   });
 
@@ -104,7 +104,7 @@ console.log('main.js loaded');
     }
   });
 
-  // card animation
+  // Card animation
   document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.card-link').forEach(link => {
       link.addEventListener('click', e => {
@@ -112,10 +112,10 @@ console.log('main.js loaded');
 
         const card = link.querySelector('.card-ui');
 
-        card.style.setProperty('--animate-duration', '2s');
+        card.style.setProperty('--animate-duration', '1s');
         card.classList.add(
           'animate__animated',
-          'animate__flipInY'
+          'animate__fadeOut'
         );
 
         card.addEventListener('animationend', () => {

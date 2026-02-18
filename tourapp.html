@@ -11,11 +11,15 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
   />
-
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
 
   <!-- JavaScript Setup -->
+  <script src="js/main.js"></script>
+  <!-- Animation Setup -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  
 
 </head>
 <script src="js/main.js"></script>
@@ -47,8 +51,8 @@
                                 <button class="delete is-large" onclick="closeForm('mySetting')"></button>
                             </h1>
                             <div class="columns hero-body is-mobile is-uppercase">
-                                <div class="column"><button class="button is-large " onclick="setLightMode()">Light🌞</button></div>
-                                <div class="column"><button class="button is-large " onclick="setDarkMode()">Dark🌙</button></div>
+                                <div class="column"><button class="button is-large " id="theme-colour1" onclick="setLightMode()">Light🌞</button></div>
+                                <div class="column"><button class="button is-large " id="theme-colour2" onclick="setDarkMode()">Dark🌙</button></div>
                             </div> 
                         </div>
                     </div> 
@@ -106,7 +110,7 @@
             <div class="column is-8">
                 <div class="content-box">
                     <h3 class="title is-5 is-uppercase">What is the project about?</h3>
-                    <p>
+                    <p class="info-font">
                         Mosaic Midlands is a mobile app celebrating and promoting art and culture across the West Midlands. 
                         It aims to strengthen local engagement by providing up‑to‑date information about cultural events, exhibitions, and activities. 
                         The app targets a wide audience — from teenagers to adults, including local artists, cultural enthusiasts, tourists, and community 
@@ -115,7 +119,7 @@
                 </div>
                 <div class="content-box">
                     <h3 class="title mt-4 is-5 is-uppercase">the problem it helps to solve </h3>
-                    <p>
+                    <p class="info-font">
                         Cuts in funding for cultural institutions have led to decreased visibility and participation in local events. 
                         Many community members remain unaware of ongoing cultural activities or how to access them. 
                         This lack of engagement threatens the sustainability of the West Midlands’ artistic identity and local creative economy.
@@ -124,7 +128,7 @@
                 </div>
                 <div class="content-box mt-5">
                     <h3 class="title is-5 is-uppercase">Aims & Objectives</h3>
-                    <ul>
+                    <ul class="info-font">
                         <li>To promote engagement with West Midlands cultural events using mobile technology.</li>
                         <li>A user‑friendly application that provides clear, accessible event information.</li>
                         <li>Ensure inclusive design principles supporting accessibility and ease of use.</li>
@@ -142,7 +146,7 @@
                     <p>
                        
                     </p>
-                    <ul class="mt-2">
+                    <ul class="mt-2 info-font">
                         <li> - Firebase: Provided secure user authentication, data synchronization, and real‑time updates.</li>
                         <li> - Development Environment: Android Studio and Firebase SDKs for flexible development.</li>
                         <li> - Android Libraries: Supported accessibility, notifications, and content display.</li>
@@ -155,7 +159,7 @@
             <div class="column is-8">
                 <div class="content-box">
                     <h3 class="title is-5 is-uppercase">Skills & What I Learned</h3>
-                    <p>
+                    <p class="info-font">
                         Completing this project deepened my understanding of mobile UX design, backend integration, and app accessibility. 
                         I learned how to connect APIs, manage real‑time data, and troubleshoot dependency errors using Gradle. 
                         Implementing Firebase taught me about user protection, GDPR compliance, and the importance of strong database structure. 
@@ -163,7 +167,7 @@
                          time constraints — and learned how to adapt quickly when certain tools (like SQLite) didn’t align with the project’s needs. 
                         Most importantly, this project reinforced the value of user‑centred design: creating an app that feels intuitive, visually engaging, and culturally meaningful to its community.
                     </p>
-                    <ul class="mt-2">
+                    <ul class="mt-2 info-font">
                         <li> </li>
                         <li> </li>
                         <li> </li>
@@ -217,11 +221,12 @@
                                 <a href="https://www.flaticon.com/search?word=%20tourist%20app" target="_blank">Flaticon</a>
                             </div>
 
-                            <p class="mt-3"><strong>Images & Gifs</strong></p>
+                            <p class="mt-3"><strong>Images & Gifs & Animations</strong></p>
                             <p style="color: black;">Found through Google then refined on Figma</p>
                             <div class="is-flex is-flex-direction-column">
                                 <a href="https://giphy.com/" target="_blank">Giphy</a>
                                 <a href="https://www.vexels.com/merch/png/" target="_blank">Vexels</a>
+                                <a href="https://animate.style/" target="_blank">Animate</a>
                             </div>
 
                             <p class="mt-3"><strong>Inspiration</strong></p>
