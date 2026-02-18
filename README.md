@@ -30,6 +30,7 @@ Navigation & Flow
 ## 🛠️ Built With
 
 | Technology | Purpose |
+|---|---|
 | HTML5 | Page structure and semantic markup |
 | CSS3 | Custom styling, keyframe animations, responsive design |
 | JavaScript (Vanilla) | Theme persistence, typewriter effect, modal logic, page transitions |
