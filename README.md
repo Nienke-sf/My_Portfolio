@@ -6,9 +6,25 @@ This is my personal portfolio website, which showcases my projects, skills, and 
 📧 **Contact:** preciousngwe@outlook.com
 
 ## 📋 About This Project
-This portfolio was designed and built entirely from scratch as a way to present my work, personality, and technical skills to potential employers and collaborators. It reflects my interests in creative development, UX thinking, and interactive design — combining clean layout with subtle animations and a consistent visual identity.
-This is a purely static site
+This portfolio was designed and built entirely from scratch to showcase my work, personality, and technical skills. Inspired by game-style design and interactive experiences, it combines clean layouts with subtle animations, playful UI elements, and a consistent visual identity.
+The site highlights my interests in creative development, UX thinking, and interactive design while remaining fully accessible and easy to navigate.
+This is a purely static site, optimized for performance and simplicity, yet still offering a dynamic and engaging experience.
+
 ## ✨ Features
+Design & Visual
+
+- Dark/light theme
+- Custom orange brand colour
+- Audiowide gaming-style font
+
+Navigation & Flow
+
+- Animated page transition 
+- Animated project cards
+- Hoverable dropdown menu accessible on every page
+- Typewriter animation that triggers on scroll 
+- Cycling job title animation 
+- Automated image slideshow
 
 
 ## 🛠️ Built With
@@ -43,5 +59,5 @@ This project is personal portfolio work. You are welcome to use it as inspiratio
 
 ---
 
-*Designed, developed, and built by Precious Ngw - 2026*
+*Designed, developed, and built by Precious N- 2026*
 
