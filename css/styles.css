@@ -184,15 +184,25 @@ body {
 #menu-btn{
   background-color: #F57B3A;
   border: none;
-  /* border-radius: 30px; */
+  color: #000000;
+  transform: none;
+  
 }
-#dropdown-hover:hover{
-  background-color:#D9D9D9;
+.dropdown-content .dropdown-item {
+  color: #000000;
+  font-size: 1.1rem; /* bigger text to match larger button */
+  padding: 0.6rem 1.2rem;
 }
-
 .dropdown-content{
   background-color: #F57B3A;
 }
+
+.dropdown-hover:hover {
+  background-color: #D9D9D9 !important;  /* overdrides bulmas defaults hover colour  */
+}
+
+
+
 
 
 /* /////// Speech Bubble Container /////// */
@@ -230,7 +240,7 @@ body {
   background-color: #ff7f2a;
 }
 
-.img-slide, .img-slide2 {
+.img-slide {
   width: 100%;
   height: 500px;
   overflow: hidden;
@@ -239,8 +249,27 @@ body {
   position: relative;
   left: 0;
   margin: 0;
-  width: 300%;             /* 100% × number of slides */
-  animation: my-slide 10s infinite;
+  width: 600%;             /* 100% × number of slides */
+  animation: my-slide 20s infinite;
+}
+.my-slide {  
+  width: 16.6666%;   /* 100 ÷ 6 */
+  position: relative;
+  float: left;
+}
+.my-slide img {
+  width: 100%;
+  height: 500px;
+  max-height: 420px;    
+  object-fit: contain;  
+}
+
+
+/* Slider 2 */
+.img-slide2 {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
 }
 .img-slide2 figure {
   position: relative;
@@ -248,19 +277,6 @@ body {
   margin: 0;
   width: 300%;             /* 100% × number of slides */
   animation: my-slide2 10s infinite;
-}
-
-.my-slide {  
-  width: 33.3333%;
-  position: relative;
-  float: left;
-}
-
-.my-slide img {
-  width: 100%;
-  height: 500px;
-  max-height: 420px;    
-  object-fit: contain;  
 }
 .my-slide2 {  
   width: 33.3333%;
@@ -408,23 +424,24 @@ body {
 
 
 /* /////// Automated slideshow animation /////// */
+
 @keyframes my-slide {
-  0%, 9%   { left:   0%; }
-  18%, 27%  { left: -100%; }
-  36%, 45%  { left: -200%; }
-  54%, 63% { left: -300%; }
-  /* making the slide go backwards */
-  72%, 81%{ left: -200%; }
-  90%, 99% { left: -100%; }
-  100% { left:   0%; }
+  0%, 5%    { left: 0%; }
+  10%, 15%  { left: -100%; }
+  20%, 25%  { left: -200%; }
+  30%, 35%  { left: -300%; }
+  40%, 45%  { left: -400%; }
+  50%, 55%  { left: -500%; }
+  /* Reverse evenly */
+  60%, 65%  { left: -400%; }
+  70%, 75%  { left: -300%; }
+  80%, 85%  { left: -200%; }
+  90%, 95%  { left: -100%; }
+  100%      { left: 0%; }
 }
+
 @keyframes my-slide2 {
-  0%, 9%   { left:   0%; }
-  18%, 27%  { left: -100%; }
-  36%, 45%  { left: -200%; }
-  54%, 63% { left: -300%; }
-  /* making the slide go backwards */
-  72%, 81%{ left: -200%; }
-  90%, 99% { left: -100%; }
-  100% { left:   0%; }
+  0%, 40%  { left: 0%; }
+  50%, 90% { left: -100%; }
+  100%     { left: 0%; }
 }

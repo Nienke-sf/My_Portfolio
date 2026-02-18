@@ -72,9 +72,6 @@ console.log('main.js loaded');
   });
 
 
-
-
-
   // Text typewrite animation 
   document.addEventListener('DOMContentLoaded', () => {
     const typewriters = document.querySelectorAll('.typewriter');
@@ -99,13 +96,14 @@ console.log('main.js loaded');
         if (index < text.length) {
           element.textContent += text.charAt(index);
           index++;
-          setTimeout(type, 10);
+          setTimeout(type, 2);
         }
       }
 
       type();
     }
   });
+
   // card animation
   document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.card-link').forEach(link => {
