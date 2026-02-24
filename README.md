@@ -49,8 +49,8 @@ Navigation & Flow
 | [Dribbble](https://dribbble.com) | Design inspiration |
 | [Webofdevs](https://webofdevs.com/) | Portfolio structure inspiration |
 | [Google Fonts](https://fonts.google.com/) | Audiowide typeface |
-| [Bulma](https://bulma.io/) | CSS framework |
-| [Animate.css](https://animate.style/) | Animation library |
+| [Bulma] | CSS framework |
+| [Animate.css] | Animation library |
 
 
 
